@@ -1,17 +1,12 @@
-/// <reference path="typings/node/node.d.ts" />
-import fs = require('fs');
-//import a = require('./a');
+import file1 = require('./file1');
+import http1 = require('./http1');
+import event1 = require('./event1');
 
-function copy(src:string, dst:string){
-	fs.createReadStream(src).pipe(fs.createWriteStream(dst));
-	//fs.writeFileSync(dst, fs.readFileSync(src))
-}
 
 console.info("helloworld");
 
-//var a1 = new a.A1();
-//a1.sayhello("world!!!");
-fs.writeFile("./1.txt", "hello world")
+file1.File1.test();
 
-var argv = process.argv;
-copy("1.txt","2.txt");
+http1.Http1.test();
+
+event1.Event1.test();
