@@ -1,0 +1,6 @@
+{
+    "version": "0.1.0", 
+    "command": "_build_run.bat",
+    "isShellCommand": true,
+    "showOutput": "always",
+}
