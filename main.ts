@@ -16,4 +16,12 @@ import net1 = require('./net1');
 //net1.test();
 
 import process1 = require('./process1');
-process1.test();
+//process1.test();
+
+import express1 = require('./express1');
+//express1.test();
+
+import zmq1 = require('./zmq1');
+//zmq1.test();
+
+require('./websock1').test();

@@ -35,8 +35,18 @@
 ###安装node或其他库
   
 	tsd install node
+	
+	npm install express //安装web框架，非必须
+	tsd install express //安装express的typescript接口定义文件
+	
 
 ###在ts文件中引用库
 
 	/// <reference path="typings/node/node.d.ts" />
 	import fs = require('fs');
+	
+#附录 常用命令
+
+- 本地目录安装包 npm install --save xxx / npm uninstall xxx
+- 全局目录安装包 npm install -g xxx / npm uninstall -g xxx
+- 安装js库对应的typescript接口 tsd install xxx
