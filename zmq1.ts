@@ -2,12 +2,17 @@
 import zmq = require('zmq');
 
 function testServer(port:number){
-	var s = zmq.socket(zmq.types.rep);
+	var s = zmq.socket('rep');
 	s.bind("tcp://*:"+port.toString());
 	s.on('message', function(msg){
 		console.log("zmq1:","server recv",msg.toString());
 		s.send("hi zmq "+ msg.toString());
 	});
+	
+	setTimeout(function(){
+		s.send("on connect");
+	}, 2000);
+	
 	process.on('SIGINT', function(){
 		s.close();
 		console.log("zmq1:","close server")
@@ -24,6 +29,7 @@ function testClient(url:string,id:string){
 	})
 	
 	c.send(id);
+	//c.send(id);
 	process.on('SIGINT', function(){
 		c.close();
 		console.log("zmq1:","close client",id)

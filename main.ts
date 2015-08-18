@@ -22,6 +22,6 @@ import express1 = require('./express1');
 //express1.test();
 
 import zmq1 = require('./zmq1');
-//zmq1.test();
+zmq1.test();
 
-require('./websock1').test();
+//require('./websock1').test();

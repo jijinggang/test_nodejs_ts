@@ -1,0 +1,30 @@
+{
+  "name": "test_nodets",
+  "version": "1.0.0",
+  "description": "test nodejs typescript etc.",
+  "main": "main.js",
+  "dependencies": {
+    "express": "^4.13.3",
+    "socket.io": "^1.3.6",
+    "zmq": "^2.12.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jijinggang/test_nodets.git"
+  },
+  "keywords": [
+    "nodejs",
+    "typescript",
+    "test"
+  ],
+  "author": "jijinggang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jijinggang/test_nodets/issues"
+  },
+  "homepage": "https://github.com/jijinggang/test_nodets#readme"
+}
