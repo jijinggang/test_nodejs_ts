@@ -48,6 +48,7 @@
 #附录 常用命令
 
 - 初始化package.json npm init
+- npm install 根据package.json自动安装依赖项
 - 本地目录安装包 npm install --save xxx / npm uninstall xxx
 - 全局目录安装包 npm install -g xxx / npm uninstall -g xxx
 - 安装js库对应的typescript接口 tsd install xxx
