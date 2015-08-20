@@ -10,9 +10,9 @@ class TcpServer{
 				callback(conn, data);
 			})
 			
-			//conn.on('connect', function(){
-			//	console.log("net1:", 'client connect')
-			//})
+			// conn.on('connection', function(){
+			// 	console.log("net1:", 'client connect')
+			// })
 			conn.on('end', function(){
 				console.log("net1:", 'client close')
 				conn.end();

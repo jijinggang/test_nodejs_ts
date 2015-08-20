@@ -27,4 +27,5 @@ import zmq1 = require('./zmq1');
 //require('./websock1').test();
 
 import md51 = require('./md5_1');
-md51.test();
+//md51.test();
+
