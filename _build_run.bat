@@ -1,3 +1,3 @@
 @echo off
 rem press ctrl+shift+b
-tsc -p . -m commonjs & node build/main
+tsc -p . --outDir build -m commonjs & node build/main
