@@ -52,3 +52,4 @@
 - 本地目录安装包 npm install --save xxx / npm uninstall xxx
 - 全局目录安装包 npm install -g xxx / npm uninstall -g xxx
 - 安装js库对应的typescript接口 tsd install xxx
+- 监视一个目录的ts文件变化  tsc -w -p xxx

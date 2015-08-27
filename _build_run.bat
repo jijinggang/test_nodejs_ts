@@ -1,3 +1,5 @@
 @echo off
 rem press ctrl+shift+b
-tsc -p . --outDir build -m commonjs & node build/main
+call tsc -p public --outDir public -m commonjs
+call tsc -p server --outDir server/build -m commonjs 
+call node server/build/main

@@ -11,7 +11,7 @@ function testServer(port:number){
 	server.listen(port, function() {
 		console.log('ws1:', 'listen on port', port);
 	})
-	app.use(express.static(__dirname + '/../public'));
+	app.use(express.static(__dirname + '/../../public'));
 
 	
 	var id = 0;
