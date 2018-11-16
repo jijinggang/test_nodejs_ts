@@ -5,6 +5,9 @@
         "module": "commonjs",
         "removeComments": false,
         "sourceMap": true,
-        "outDir": "build"
+        "outDir": "build",
+        "types": [
+            "node"
+        ]
     }
 }

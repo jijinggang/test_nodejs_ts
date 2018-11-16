@@ -11,7 +11,7 @@ export class File1 {
 		//fs.writeFileSync(dst, fs.readFileSync(src))
 	}
 	static write(fileName: string, value: any) {
-		fs.writeFile(fileName, value, function(err, data) {
+		fs.writeFile(fileName, value, function(err) {
 			if (err) {
 				console.log("file1:", "err write:", fileName);
 			} else {
